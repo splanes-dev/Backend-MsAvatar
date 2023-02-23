@@ -1,4 +1,7 @@
 package com.splanes.backend.microavatar.model
 
-class Avatar {
-}
+data class Avatar(
+    val name: String,
+    val content: String,
+    val isDefault: Boolean
+)

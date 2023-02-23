@@ -5,4 +5,13 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") {
+            from(files("dependency.libs.versions.toml"))
+        }
+    }
+}
+
 rootProject.name = "micro-avatar"

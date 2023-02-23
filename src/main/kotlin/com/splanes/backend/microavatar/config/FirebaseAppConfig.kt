@@ -1,4 +1,4 @@
-package com.splanes.mstest.infrastructure.config
+package com.splanes.backend.microavatar.config
 
 import com.google.auth.oauth2.GoogleCredentials
 import com.google.firebase.FirebaseApp

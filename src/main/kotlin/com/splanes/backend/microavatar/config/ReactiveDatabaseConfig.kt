@@ -1,6 +1,6 @@
-package com.splanes.mstest.infrastructure.config
+package com.splanes.backend.microavatar.config
 
-import com.splanes.mstest.infrastructure.repository.db.AvatarDatabaseRepository
+import com.splanes.backend.microavatar.repository.db.AvatarDatabaseRepository
 import io.r2dbc.spi.ConnectionFactory
 import org.mariadb.r2dbc.MariadbConnectionConfiguration
 import org.mariadb.r2dbc.MariadbConnectionFactory

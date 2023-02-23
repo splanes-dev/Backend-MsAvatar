@@ -1,9 +1,9 @@
-package com.splanes.mstest.web.dto.mapper
+package com.splanes.backend.microavatar.dto.mapper
 
-import com.splanes.mstest.domain.model.Avatar
-import com.splanes.mstest.domain.model.Avatars
-import com.splanes.mstest.web.dto.AvatarDto
-import com.splanes.mstest.web.dto.AvatarsDto
+import com.splanes.backend.microavatar.dto.AvatarDto
+import com.splanes.backend.microavatar.dto.AvatarsDto
+import com.splanes.backend.microavatar.model.Avatar
+import com.splanes.backend.microavatar.model.Avatars
 import org.springframework.stereotype.Component
 
 @Component

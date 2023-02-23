@@ -19,16 +19,16 @@ repositories {
 }
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
-    implementation("io.projectreactor.kotlin:reactor-kotlin-extensions")
-    implementation("org.jetbrains.kotlin:kotlin-reflect")
-    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
-    providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-    testImplementation("org.springframework.boot:spring-boot-starter-test")
-    testImplementation("io.projectreactor:reactor-test")
+    implementation(libs.bundles.spring)
+    implementation(libs.bundles.kotlin)
+    implementation(libs.bundles.reactor)
+
+    implementation(libs.jackson)
+    implementation(libs.mariadb)
+    implementation(libs.firebase)
+
+    providedRuntime(libs.spring.tomcat)
+    testImplementation(libs.spring.test)
 }
 
 tasks.withType<KotlinCompile> {

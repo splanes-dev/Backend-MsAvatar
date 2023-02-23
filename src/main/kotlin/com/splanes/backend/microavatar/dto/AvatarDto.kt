@@ -1,4 +1,4 @@
-package com.splanes.mstest.web.dto
+package com.splanes.backend.microavatar.dto
 
 data class AvatarDto(
     val name: String,
