@@ -1,0 +1,44 @@
+[versions]
+reactor-core = "3.4.18"
+reactor-spring = "2.0.7.RELEASE"
+mariadb = "1.1.3"
+firebase = "9.1.1"
+
+[libraries]
+# Spring libs
+spring-starter-web = { module = "org.springframework.boot:spring-boot-starter-web" }
+spring-starter-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux" }
+spring-starter-r2db = { module = "org.springframework.boot:spring-boot-starter-data-r2dbc" }
+spring-tomcat = { module = "org.springframework.boot:spring-boot-starter-tomcat" }
+spring-test = { module = "org.springframework.boot:spring-boot-starter-test" }
+# Kotlin libs
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8" }
+kotlin-coroutinesCore = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core" }
+kotlin-coroutinesReactor = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-reactor" }
+# Reactor
+reactor-kotlinExtensions = { module = "io.projectreactor.kotlin:reactor-kotlin-extensions" }
+reactor-core = { module = "io.projectreactor:reactor-core", version.ref = "reactor-core" }
+reactor-spring = { module = "io.projectreactor.spring:reactor-spring-core", version.ref = "reactor-spring" }
+# Other
+jackson = { module = "com.fasterxml.jackson.module:jackson-module-kotlin" }
+mariadb = { module = "org.mariadb:r2dbc-mariadb", version.ref = "mariadb" }
+firebase = { module = "com.google.firebase:firebase-admin", version.ref = "firebase" }
+
+[bundles]
+spring = [
+    "spring-starter-web",
+    "spring-starter-webflux",
+    "spring-starter-r2db"
+]
+kotlin = [
+    "kotlin-reflect",
+    "kotlin-stdlib",
+    "kotlin-coroutinesCore",
+    "kotlin-coroutinesReactor"
+]
+reactor = [
+    "reactor-kotlinExtensions",
+    "reactor-core",
+    "reactor-spring"
+]
