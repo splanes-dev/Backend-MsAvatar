@@ -1,6 +1,5 @@
 # Avatar Microservice
 
----
 ## Description
 Micro that serves user avatar's based on the email's MD5 hash.  
 It is able to provide:
